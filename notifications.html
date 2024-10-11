@@ -1,0 +1,226 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Notifications</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1877f2;
+        }
+        .nav-links a {
+            color: #65676b;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+        .nav-links a:hover {
+            color: #1877f2;
+        }
+        .notifications-container {
+            margin-top: 70px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        .notification {
+            padding: 15px;
+            border-bottom: 1px solid #e4e6eb;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s;
+        }
+        .notification:last-child {
+            border-bottom: none;
+        }
+        .notification:hover {
+            background-color: #f0f2f5;
+        }
+        .notification-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .notification-content {
+            flex-grow: 1;
+        }
+        .notification-text {
+            margin-bottom: 5px;
+        }
+        .notification-time {
+            font-size: 12px;
+            color: #65676b;
+        }
+        .notification-action {
+            background-color: #e7f3ff;
+            color: #1877f2;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .notification-action:hover {
+            background-color: #dbedff;
+        }
+        .notification.unread {
+            background-color: #e7f3ff;
+        }
+        .notification.unread:hover {
+            background-color: #dbedff;
+        }
+        .notification-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            fill: #1877f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ConnectHub</div>
+            <div class="nav-links">
+                <a href="home.html"
+                <a href="profile.html"
+                <a href="messages.html"
+                <a href="notifications.html"
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="notifications-container">
+            <div class="notification unread">
+                <svg class="notification-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+                </svg>
+                <img src="Gigachad.webp" alt="negro" class="notification-avatar">
+                <div class="notification-content">
+                    <div class="notification-text"><strong>negro</strong> commented on your post: "Great photo! Where was this taken?"</div>
+                    <div class="notification-time">2 minutes ago</div>
+                </div>
+                <button class="notification-action">Reply</button>
+            </div>
+            <div class="notification">
+                <svg class="notification-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 5v14.06L12 16l-4 3.06V5h8m0-2H8c-1.1 0-2 .9-2 2v14.06c0 .8.91 1.28 1.58.83L12 17l4.42 2.89c.67.45 1.58-.03 1.58-.83V5c0-1.1-.9-2-2-2z"/>
+                </svg>
+                <img src="redfordwhite.jpg" alt="amerikano" class="notification-avatar">
+                <div class="notification-content">
+                    <div class="notification-text"><strong>amerikano</strong> liked your post</div>
+                    <div class="notification-time">1 hour ago</div>
+                </div>
+            </div>
+            <div class="notification">
+                <svg class="notification-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0-6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 8c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm-6 4c.22-.72 3.31-2 6-2 2.7 0 5.8 1.29 6 2H9zm-3-3v-3h3v-2H6V7H4v3H1v2h3v3z"/>
+                </svg>
+                <img src="images.jpg" alt="babalu" class="notification-avatar">
+                <div class="notification-content">
+                    <div class="notification-text"><strong>babalu</strong> sent you a friend request</div>
+                    <div class="notification-time">3 hours ago</div>
+                </div>
+                <button class="notification-action">Accept</button>
+            </div>
+            <div class="notification">
+                <svg class="notification-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 6h-2v9H6v2c0 .55.45 1 1 1h11l4 4V7c0-.55-.45-1-1-1zm-4 6V3c0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1v14l4-4h10c.55 0 1-.45 1-1z"/>
+                </svg>
+                <img src="beluga.jpg" alt="iring laaw" class="notification-avatar">
+                <div class="notification-content">
+                    <div class="notification-text"><strong>iring laaw</strong> mentioned you in a comment</div>
+                    <div class="notification-time">1 day ago</div>
+                </div>
+            </div>
+            <div class="notification">
+                <svg class="notification-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z"/>
+                </svg>
+                <img src="kittle.webp" alt="ConnectHub" class="notification-avatar">
+                <div class="notification-content">
+                    <div class="notification-text">iro</div>
+                    <div class="notification-time">2 days ago</div>
+                </div>
+                <button class="notification-action">Update Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Function to mark notification as read
+        function markAsRead(notification) {
+            notification.classList.remove('unread');
+        }
+
+        // Add click event listeners to all notifications
+        const notifications = document.querySelectorAll('.notification');
+        notifications.forEach(notification => {
+            notification.addEventListener('click', () => markAsRead(notification));
+        });
+
+        // Function to handle action button clicks
+        function handleActionClick(event, action) {
+            event.stopPropagation(); // Prevent the notification from being marked as read
+            alert(`Action: ${action}`); // Replace with actual action handling
+        }
+
+        // Add click event listeners to all action buttons
+        const actionButtons = document.querySelectorAll('.notification-action');
+        actionButtons.forEach(button => {
+            button.addEventListener('click', (event) => handleActionClick(event, button.textContent));
+        });
+
+        // Simulate new notification
+        setTimeout(() => {
+            const newNotification = document.createElement('div');
+            newNotification.className = 'notification unread';
+            newNotification.innerHTML = `
+                <svg class="notification-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <img src="cocomartin.jpg" alt="cocomartin" class="notification-avatar">
+                <div class="notification-content">
+                    <div class="notification-text"><strong>cocomartin</strong> liked your photo</div>
+                    <div class="notification-time">Just now</div>
+                </div>
+            `;
+            const notificationsContainer = document.querySelector('.notifications-container');
+            notificationsContainer.insertBefore(newNotification, notificationsContainer.firstChild);
+            
+            // Add event listener to the new notification
+            newNotification.addEventListener('click', () => markAsRead(newNotification));
+        }, 5000);
+    </script>
+</body></html>

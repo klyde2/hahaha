@@ -1,0 +1,341 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Your Profile</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            color: #1c1e21;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1877f2;
+        }
+        .nav-links a {
+            color: #65676b;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+        .nav-links a:hover {
+            color: #1877f2;
+        }
+        .profile-header {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .cover-photo {
+            width: 100%;
+            height: 200px;
+            background-image: url('https://socialmedia.app.com/cover-photos/default-cover.jpg');
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px 8px 0 0;
+        }
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid white;
+            position: absolute;
+            top: 125px;
+            left: 20px;
+        }
+        .profile-info {
+            margin-top: 80px;
+            padding-left: 180px;
+        }
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .profile-bio {
+            color: #65676b;
+            margin-bottom: 10px;
+        }
+        .profile-stats {
+            display: flex;
+            gap: 20px;
+            color: #65676b;
+            font-size: 14px;
+        }
+        .edit-profile-btn {
+            position: absolute;
+            top: 220px;
+            right: 20px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            margin-top: 20px;
+        }
+        .left-sidebar {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .main-content {
+            flex: 2;
+        }
+        .widget {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .widget-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #1c1e21;
+        }
+        .widget ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .widget li {
+            padding: 5px 0;
+            color: #65676b;
+        }
+        .post {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+        .post-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .post-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .post-author {
+            font-weight: bold;
+        }
+        .post-timestamp {
+            color: #65676b;
+            font-size: 12px;
+            margin-left: 5px;
+        }
+        .post-content {
+            margin-bottom: 15px;
+        }
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid #e4e6eb;
+            padding-top: 10px;
+        }
+        .action-btn {
+            background: none;
+            border: none;
+            color: #65676b;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+        }
+        .action-btn svg {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">ConnectHub</div>
+            <div class="nav-links">
+                <a href="home.html"
+                <a href="profile.html"
+                <a href="messages.html"
+                <a href="notifications.html"
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="profile-header">
+            <div class="cover-photo"></div>
+            <img src="dolphy.jpg" alt="Your profile picture" class="profile-photo">
+            <div class="profile-info">
+                <h1 class="profile-name">Klyde apura</h1>
+                <p class="profile-bio">Passionate developer, coffee enthusiast, and adventure seeker.</p>
+                <div class="profile-stats">
+                    <span>500 Friends</span>
+                    <span>200 Posts</span>
+                    <span>1000 Followers</span>
+                </div>
+            </div>
+            <button class="edit-profile-btn">Edit Profile</button>
+        </div>
+
+        <div class="content">
+            <aside class="left-sidebar">
+                <div class="widget">
+                    <h3 class="widget-title">About Me</h3>
+                    <ul>
+                        <li>🏢 Works at Tech Innovations Inc.</li>
+                        <li>🎓 Studied at University of Technology</li>
+                        <li>🏠 Lives in San Francisco, CA</li>
+                        <li>🎂 Born on July 15</li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h3 class="widget-title">Photos</h3>
+                    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px;">
+                        <img src="the rock.jpg" alt="User photo 1" style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px;">
+                        <img src="sasuke.jpg" alt="User photo 2" style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px;">
+                        <img src="saskitman.jpg" alt="User photo 3" style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px;">
+                        <img src="ip man.jpg" alt="User photo 4" style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px;">
+                        <img src="kakashi.jpg" alt="User photo 5" style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px;">
+                        <img src="naruto.jpg" alt="User photo 6" style="width: 100%; height: 80px; object-fit: cover; border-radius: 4px;">
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="the rock.jpg" alt="Your avatar" class="post-avatar">
+                        <div>
+                            <span class="post-author>the rock</span>
+                            <span class="post-timestamp">2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>A new puppy has born #Newborn #puppy
+
+                        </p>
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 16a2 2 0 01-2-2H3a2 2 0 01-2-2V5a2 2 0 012-2h3V1a1 1 0 011-1h2a1 1 0 011 1v2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3a2 2 0 01-2 2z"/>
+                            </svg>
+                            Like
+                        </button>
+                        <button class="action-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M14 1a1 1 0 011 1v8a1 1 0 01-1 1h-4.414L6 14.586V11H2a1 1 0 01-1-1V2a1 1 0 011-1h12z"/>
+                            </svg>
+                            Comment
+                        </button>
+                        <button class="action-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M12 2a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h8zm-1 2H5a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1V5a1 1 0 00-1-1z"/>
+                            </svg>
+                            Share
+                        </button>
+                    </div>
+                </div>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="ip man.jpg" alt="Your avatar" class="post-avatar">
+                        <div>
+                            <span class="post-author">pakarate ka</span>
+                            <span class="post-timestamp">1 week ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>A new born cat  #newborn #cat</p>
+                        <img src="https://kittens.photosandpictures.net/main.php?g2_view=core.DownloadItem&g2_itemId=3072&g2_serialNumber=3" alt="A scenic view from a mountain top" width="100%" style="border-radius: 8px; margin-top: 10px;">
+                    </div>
+                    <div class="post-actions">
+                        <button class="action-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M8 16a2 2 0 01-2-2H3a2 2 0 01-2-2V5a2 2 0 012-2h3V1a1 1 0 011-1h2a1 1 0 011 1v2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3a2 2 0 01-2 2z"/>
+                            </svg>
+                            Like
+                        </button>
+                        <button class="action-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M14 1a1 1 0 011 1v8a1 1 0 01-1 1h-4.414L6 14.586V11H2a1 1 0 01-1-1V2a1 1 0 011-1h12z"/>
+                            </svg>
+                            Comment
+                        </button>
+                        <button class="action-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M12 2a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2h8zm-1 2H5a1 1 0 00-1 1v6a1 1 0 001 1h6a1 1 0 001-1V5a1 1 0 00-1-1z"/>
+                            </svg>
+                            Share
+                        </button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script>
+        // Like functionality
+        document.querySelectorAll('.action-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                if (this.textContent.trim() === 'Like') {
+                    this.innerHTML = `
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#1877f2">
+                            <path d="M8 16a2 2 0 01-2-2H3a2 2 0 01-2-2V5a2 2 0 012-2h3V1a1 1 0 011-1h2a1 1 0 011 1v2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3a2 2 0 01-2 2z"/>
+                        </svg>
+                        Liked
+                    `;
+                    this.style.color = '#1877f2';
+                } else if (this.textContent.trim() === 'Liked') {
+                    this.innerHTML = `
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 16a2 2 0 01-2-2H3a2 2 0 01-2-2V5a2 2 0 012-2h3V1a1 1 0 011-1h2a1 1 0 011 1v2h3a2 2 0 012 2v7a2 2 0 01-2 2h-3a2 2 0 01-2 2z"/>
+                        </svg>
+                        Like
+                    `;
+                    this.style.color = '#65676b';
+                }
+            });
+        });
+
+        // Edit Profile Button
+        const editProfileBtn = document.querySelector('.edit-profile-btn');
+        editProfileBtn.addEventListener('click', () => {
+            alert('Edit profile functionality would be implemented here.');
+        });
+    </script>
+</body></html>
